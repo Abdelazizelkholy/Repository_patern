@@ -18,6 +18,3 @@ Route::get('/', function () {
 });
 
 Route::get('users', 'App\Http\Controllers\UserController@index');
-ftp-server: ${{ secrets.FTP_SERVER }}
-        ftp-username: ${{ secrets.FTP_USERNAME }}
-        ftp-password: ${{ secrets.FTP_PASSWORD }}
