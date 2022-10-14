@@ -18,3 +18,6 @@ Route::get('/', function () {
 });
 
 Route::get('users', 'App\Http\Controllers\UserController@index');
+
+Route::get('users', 'App\Http\Controllers\UserController@index');
+Route::get('users', 'App\Http\Controllers\UserController@index');
