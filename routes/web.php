@@ -20,24 +20,6 @@ Route::get('/', function () {
 Route::get('users', 'App\Http\Controllers\UserController@index');
 Route::get('products', 'App\Http\Controllers\ProductController@index');
 
-/*
-on:
-  push:
-    branches:
-      main
-name: 🚀 Deploy website on push
-jobs:
-  web-deploy:
-    name: 🎉 Deploy
-    runs-on: ubuntu-latest
-    steps:
-    - name: 🚚 Get latest code
-      uses: actions/checkout@v2
+Route::get('de', 'App\Http\Controllers\ProductController@de');
 
-    - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@4.3.2
-      with:
-        server: ftp.samkirkland.com
-        username: ${{ secrets.ftp_username }}
-        password: ${{ secrets.ftp_password }}
-        server-dir: sub.ftp.samkirkland.com*/
+Route::get('de', 'App\Http\Controllers\ProductController@de');
