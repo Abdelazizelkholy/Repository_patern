@@ -19,7 +19,3 @@ Route::get('/', function () {
 
 Route::get('users', 'App\Http\Controllers\UserController@index');
 Route::get('products', 'App\Http\Controllers\ProductController@index');
-
-Route::get('de', 'App\Http\Controllers\ProductController@de');
-
-Route::get('de', 'App\Http\Controllers\ProductController@de');
