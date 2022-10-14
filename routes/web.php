@@ -19,4 +19,3 @@ Route::get('/', function () {
 
 Route::get('users', 'App\Http\Controllers\UserController@index');
 
-Route::get('posts', 'App\Http\Controllers\UserController@index');
