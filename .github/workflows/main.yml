@@ -2,16 +2,15 @@ on:
   push:
     branches:
       main
-name: 🚀 Deploy website on push
 jobs:
-  web-deploy:
-    name: 🎉 Deploy
+  FTP-Deploy-Action:
+    name: FTP-Deploy-Action
     runs-on: ubuntu-latest
     steps:
-    - name: 🚚 Get latest code
-      uses: actions/checkout@v2
-
-    - name: 📂 Sync files
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth:2
+    - name: FTP-Deploy-Action
       uses: SamKirkland/FTP-Deploy-Action@4.3.2
       with:
         ftp-server: ${{ secrets.FTP_SERVER }}
